@@ -7,6 +7,6 @@ release-from-tag:
     - echo "running release from $CI_COMMIT_TAG"
   release:
     name: "Release $CI_COMMIT_TAG"
-    description: 'Created using the release-cli'                    # $RELEASE_DESCRIPTION must be defined
-    tag_name: '$CI_COMMIT_TAG'                                      # elsewhere in the pipeline
+    description: 'Created using the release-cli'                    
+    tag_name: '$CI_COMMIT_TAG'                                      
     ref: '$CI_COMMIT_TAG'
